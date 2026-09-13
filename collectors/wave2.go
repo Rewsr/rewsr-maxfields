@@ -38,5 +38,6 @@ func Wave2Collectors(r runner.CommandRunner) []facts.Collector {
 		NewSMBIOSCollector(),
 		NewNVMeCollector(r),
 		NewIPMICollector(r),
+		NewGPUCollector(r),
 	}
 }

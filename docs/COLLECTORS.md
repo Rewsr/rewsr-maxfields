@@ -19,5 +19,6 @@ Wave two (collectors.Wave2Collectors, append in buildCollectors):
 | linux_smbios | /sys/class/dmi/id | vendor/product/serial/BIOS/chassis |
 | linux_nvme | nvme list -o json | per-drive model/fw/serial/size |
 | ipmi | ipmitool | power state, temps/fans/watts, not-ok sensors |
+| linux_gpu | /sys/bus/pci, /proc/modules, /dev, nvidia-smi | NVIDIA GPU + BlueField DPU detection, CUDA/DOCA/GPUDirect. Caps: gpu, nvidia_gpu, gpu_cuda, bluefield_dpu, doca, gpudirect_rdma |
 
 All degrade per-source: missing tool or subsystem = partial facts + error naming the gap, never a panic. File-reading collectors take SysRoot for fixture-tree tests. Command collectors take the shared CommandRunner and LookPath.

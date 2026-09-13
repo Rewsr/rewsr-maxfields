@@ -104,8 +104,8 @@ func TestKernelCollectorNothingReadable(t *testing.T) {
 
 func TestWave2CollectorsWiring(t *testing.T) {
 	list := Wave2Collectors(newFakeRunner())
-	if len(list) != 13 {
-		t.Fatalf("wave 2 should wire 13 collectors, got %d", len(list))
+	if len(list) != 14 {
+		t.Fatalf("wave 2 should wire 14 collectors, got %d", len(list))
 	}
 	seen := map[string]bool{}
 	for _, c := range list {
