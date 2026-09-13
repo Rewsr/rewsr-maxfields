@@ -1,0 +1,5 @@
+- rewsr-facts collects hardware and capability facts from bare-metal Linux hosts so Rewsr knows what each server in a fleet can actually do.
+- It runs a set of small, independent collectors that read cheap sources like /sys, /proc, Redfish, and standard Linux tools, each degrading gracefully when a subsystem or tool is missing.
+- The collectors turn raw observations into capability flags (things like TEE support, RDMA, PCIe generation, GPU and DPU presence) that downstream schedulers can place workloads against.
+- Facts from every collector are merged into one per-server record, so a single scan answers "what is this machine and what is it capable of" without guessing from SKU strings.
+- It is for operators running bare-metal-as-a-service fleets who need an accurate, live inventory of real host capability rather than a static spec sheet.
