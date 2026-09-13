@@ -7,8 +7,8 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
-	"github.com/Rewsr/rewsr-facts/runner"
+	"github.com/Rewsr/rewsr-maxfields/facts"
+	"github.com/Rewsr/rewsr-maxfields/runner"
 )
 
 // LLDPCollector reads switch neighbor announcements via lldpd's lldpctl.

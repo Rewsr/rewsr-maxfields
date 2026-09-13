@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 // PublicServer is the public, stable shape returned by GET /servers/{id}.

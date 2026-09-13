@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 	_ "github.com/mattn/go-sqlite3" // SQLite driver
 )
 

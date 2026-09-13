@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
-	"github.com/Rewsr/rewsr-facts/runner"
+	"github.com/Rewsr/rewsr-maxfields/facts"
+	"github.com/Rewsr/rewsr-maxfields/runner"
 )
 
 // LinuxHostCollector gathers CPU, disk, and NIC facts by running standard

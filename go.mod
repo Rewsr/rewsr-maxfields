@@ -1,4 +1,4 @@
-module github.com/Rewsr/rewsr-facts
+module github.com/Rewsr/rewsr-maxfields
 
 go 1.22
 

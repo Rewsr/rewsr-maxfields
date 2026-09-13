@@ -7,7 +7,7 @@ CGO ?= 1
 GOENV = CGO_ENABLED=$(CGO)
 
 build:
-	$(GOENV) go build -o rewsr-facts ./cmd/rewsr-facts
+	$(GOENV) go build -o rewsr-maxfields ./cmd/rewsr-maxfields
 
 test:
 	$(GOENV) go test ./...
@@ -19,4 +19,4 @@ tidy:
 	go mod tidy
 
 run: build
-	./rewsr-facts
+	./rewsr-maxfields

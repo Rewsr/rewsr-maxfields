@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
-	"github.com/Rewsr/rewsr-facts/runner"
+	"github.com/Rewsr/rewsr-maxfields/facts"
+	"github.com/Rewsr/rewsr-maxfields/runner"
 )
 
 // NICOffloadCollector goes one level deeper than the basic NIC scan: per

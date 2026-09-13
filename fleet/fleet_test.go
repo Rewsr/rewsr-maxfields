@@ -5,7 +5,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 func sampleFleet() []*facts.ServerFacts {

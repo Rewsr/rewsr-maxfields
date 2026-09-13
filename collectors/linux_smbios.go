@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 // SMBIOSCollector reads the DMI identity of the server from

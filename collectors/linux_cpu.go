@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 // lscpuJSON mirrors the shape of `lscpu -J` output: a flat list of

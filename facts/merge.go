@@ -28,7 +28,7 @@ func BuildServerFacts(ctx context.Context, serverID string, collectors []Collect
 		cf, err := c.Collect(ctx, serverID)
 		if err != nil {
 			errs = append(errs, err)
-			log.Printf("rewsr-facts: collector failed for server %s: %v", serverID, err)
+			log.Printf("rewsr-maxfields: collector failed for server %s: %v", serverID, err)
 		}
 		if cf != nil {
 			mergeInto(merged, cf)

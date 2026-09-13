@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 // ipLinkEntry mirrors one element of `ip -j link` output.

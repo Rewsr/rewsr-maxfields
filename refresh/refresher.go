@@ -8,8 +8,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
-	"github.com/Rewsr/rewsr-facts/store"
+	"github.com/Rewsr/rewsr-maxfields/facts"
+	"github.com/Rewsr/rewsr-maxfields/store"
 )
 
 // Refresher periodically runs BuildServerFacts for a fixed set of servers
@@ -52,11 +52,11 @@ func (r *Refresher) refreshAll(ctx context.Context, serverIDs []string) {
 	for _, id := range serverIDs {
 		f, err := facts.BuildServerFacts(ctx, id, r.Collectors)
 		if err != nil {
-			log.Printf("rewsr-facts: refresh failed for server %s: %v", id, err)
+			log.Printf("rewsr-maxfields: refresh failed for server %s: %v", id, err)
 			continue
 		}
 		if err := r.Store.SaveFacts(ctx, f); err != nil {
-			log.Printf("rewsr-facts: saving facts for server %s: %v", id, err)
+			log.Printf("rewsr-maxfields: saving facts for server %s: %v", id, err)
 		}
 	}
 }

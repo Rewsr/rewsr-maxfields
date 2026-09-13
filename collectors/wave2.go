@@ -1,8 +1,8 @@
 package collectors
 
 import (
-	"github.com/Rewsr/rewsr-facts/facts"
-	"github.com/Rewsr/rewsr-facts/runner"
+	"github.com/Rewsr/rewsr-maxfields/facts"
+	"github.com/Rewsr/rewsr-maxfields/runner"
 )
 
 // Wave2Collectors returns the deep-hardware collector set: PCIe topology,
@@ -12,7 +12,7 @@ import (
 // given subsystem or tool, so the whole set is safe to run everywhere the
 // wave-one collectors run.
 //
-// Wiring: append these to the slice built in cmd/rewsr-facts/main.go, in
+// Wiring: append these to the slice built in cmd/rewsr-maxfields/main.go, in
 // buildCollectors, after the provisioning collector:
 //
 //	list := []facts.Collector{ ...existing three... }

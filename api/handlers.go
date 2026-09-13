@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/store"
+	"github.com/Rewsr/rewsr-maxfields/store"
 )
 
 // Server serves the HTTP API from a FactsStore. It never holds a
@@ -33,7 +33,7 @@ func (s *Server) Routes() http.Handler {
 func (s *Server) handleHealthz(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, http.StatusOK, map[string]any{
 		"healthy":   true,
-		"service":   "rewsr-facts",
+		"service":   "rewsr-maxfields",
 		"timestamp": time.Now().UTC().Format(time.RFC3339),
 	})
 }
@@ -77,7 +77,7 @@ func writeJSON(w http.ResponseWriter, status int, v any) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(status)
 	if err := json.NewEncoder(w).Encode(v); err != nil {
-		log.Printf("rewsr-facts: encoding response: %v", err)
+		log.Printf("rewsr-maxfields: encoding response: %v", err)
 	}
 }
 

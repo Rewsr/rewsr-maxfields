@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 func memoryStore(t *testing.T) *SQLiteStore {

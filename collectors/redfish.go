@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 // RedfishCollector fetches power state and identity facts from a Redfish

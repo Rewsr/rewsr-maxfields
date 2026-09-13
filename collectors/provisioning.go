@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
-	"github.com/Rewsr/rewsr-facts/store"
+	"github.com/Rewsr/rewsr-maxfields/facts"
+	"github.com/Rewsr/rewsr-maxfields/store"
 )
 
 // ProvisioningCollector reads provisioning state from our own

@@ -10,7 +10,7 @@ import (
 	"encoding/json"
 	"sort"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 // Summary is the fleet rollup.

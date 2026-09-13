@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 // TEECollector detects hardware trusted-execution capability on the host:

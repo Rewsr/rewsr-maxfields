@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Rewsr/rewsr-facts/facts"
+	"github.com/Rewsr/rewsr-maxfields/facts"
 )
 
 // HugepagesCollector reports the hugepage configuration of the host: the

@@ -1,5 +1,5 @@
 // Package facts defines the normalized ServerFacts model shared by every
-// collector, store, and API handler in rewsr-facts. Nothing in this package
+// collector, store, and API handler in rewsr-maxfields. Nothing in this package
 // touches hardware or the network directly; it just describes the shape of
 // what a collector produces and how those shapes get merged together.
 package facts
